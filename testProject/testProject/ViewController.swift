@@ -13,15 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(currentDate())
+//        print(currentDate())
+        let date = Date()
+        print(date.fullDateString())
     }
     
     
-    func currentDate() -> String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .full
-        return dateFormatter.string(from: Date())
-    }
+//    func currentDate() -> String{
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .full
+//        return dateFormatter.string(from: Date())
+//    }
 
 
 }
